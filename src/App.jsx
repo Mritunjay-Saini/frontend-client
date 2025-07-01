@@ -7,7 +7,7 @@ function App() {
   const clicked = async () => {
     const response = prompt("Enter your name");
     try {
-      const res = await axios.get(`http://localhost:5000/${response}`);
+      const res = await axios.get(`https://backend-server-tt8x.onrender.com/${response}`);
       setData(res.data); // Assuming server returns a color like "red", "#f0f0f0", etc.
       console.log(res.data);
     } catch (err) {
